@@ -1,6 +1,17 @@
 const API = "https://fakeapi.net/products";
 
-    const response = await fetch (API);
+async function getProducts() {
+    try{
+        const response = await fetch (API);
     const data = await response.json ();
 
-    console.log(data);
+    console.log (data);
+    } catch (error){
+        console.error("error al conectarse al fakeApi");
+    }
+}
+    
+getProducts();
+    
+
+
