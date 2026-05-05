@@ -21,14 +21,14 @@ class Person{
 const personas = [];
 
 for (let i = 1; i<=5; i++){
-    console.log(`registro de person[i]`);
+
 
     let nombre = prompt("ingresa tu nombre");
     let edad = prompt("ingresa tu edad");
     let genero = prompt("ingresa tu genero");
 
     const persona = new Person(nombre, edad, genero);
-    
+
     personas.push(persona);
 }
 
