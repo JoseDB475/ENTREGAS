@@ -20,11 +20,14 @@ class Person{
 
 const personas = [];
 
-for (let i = 1; i<=5; i++){
+  let cantidad = prompt("cuantas personas vas a registar");
+
+
+for (let i = 1; i<=cantidad; i++){
 
 
     let nombre = prompt("ingresa tu nombre");
-    let edad = prompt("ingresa tu edad");
+    let edad = Number (prompt("ingresa tu edad"));
     let genero = prompt("ingresa tu genero");
 
     const persona = new Person(nombre, edad, genero);
@@ -35,6 +38,20 @@ for (let i = 1; i<=5; i++){
 console.log(personas);
 
 
+
+
+let cantHombre = 0;
+let cantMujer = 0;
+
+for (let i = 0; i<=5; i++) {
+    if(personas[i].genero== "f");
+    cantMujer = cantMujer + 1
+}if (personas[i].genero== "m"){
+    cantHombre = cantHombre + 1
+
+}
+    
+console.log(`la cantidad de hombres es ${cantHombre} , y la cantidad de mujeres es ${cantMujer}`);
 
 
 
