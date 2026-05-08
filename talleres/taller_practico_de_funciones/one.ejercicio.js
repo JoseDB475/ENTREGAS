@@ -4,7 +4,18 @@
 // Ejemplo: sumarArray([1, 2, 3]) → 6.
 
 function sumarArray (numeros){
-    
+
+    let suma = 0
+
+    for (let i = 0; i<numeros.length; i++){
+
+         suma += numeros[i]
+
+    };
+     return suma
 };
 
 const numeros = [7,75,97,103,151];
+
+console.log(`la suma es ${sumarArray(numeros)}`);
+
