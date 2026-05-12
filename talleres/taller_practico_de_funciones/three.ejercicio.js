@@ -14,12 +14,12 @@ function contarPares (numeros){
 
          if (numeros[index] % 2 == 0){ 
              conteo ++
-         }
-    }
+         };
+    };
     
     return conteo
     
 
-}
+};
 
 console.log(contarPares(numeros));
